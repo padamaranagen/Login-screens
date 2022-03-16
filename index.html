@@ -13,6 +13,14 @@
         box-sizing: border-box;
       }
 
+      .float-container {
+        padding: 20px;
+      }
+
+      .float-child {
+        width: 50%;
+        float: left;
+      }
       .bg-img {
         /* The image used */
         background-image: url('https://www.w3schools.com/howto/img_nature.jpg');
@@ -71,28 +79,40 @@
   <body>
     <h2>Form on Hero Image</h2>
     <div class="bg-img">
-      <form class="container">
-        <h1>Login</h1>
+      <div class="box">
+        <div class="float-container">
+          <div class="float-child">
+            <p>
+              This example creates a form on a responsive image. Try to resize
+              the browser window to see how it always will cover the whole width
+              of the screen, and that it scales nicely on all screen sizes.
+            </p>
+          </div>
+          <div class="float-child">
+            <form class="container">
+              <h1>Login</h1>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required />
+              <label for="email"><b>Email</b></label>
+              <input
+                type="text"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
 
-        <label for="psw"><b>Password</b></label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="psw"
-          required
-        />
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
 
-        <button type="submit" class="btn">Login</button>
-      </form>
+              <button type="submit" class="btn">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <p>
-      This example creates a form on a responsive image. Try to resize the
-      browser window to see how it always will cover the whole width of the
-      screen, and that it scales nicely on all screen sizes.
-    </p>
   </body>
 </html>
